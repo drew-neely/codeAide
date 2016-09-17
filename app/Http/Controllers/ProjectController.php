@@ -6,9 +6,9 @@ use Illuminate\Http\Request;
 use DB;
 use App\Http\Requests;
 
-class submissionsController extends Controller
+class ProjectController extends Controller
 {
-    public function index($projectId){
+    public function index($projectId) {
     	$projects = DB::table('projects')->get();
     	$project = NULL;
     	foreach ($projects as $p) {
@@ -16,6 +16,6 @@ class submissionsController extends Controller
     			$project = $p;
     		}
     	}
-    	return view('submissions.index', compact('project'));
+    	return view('projects.individualproject', compact('project'));
     }
 }

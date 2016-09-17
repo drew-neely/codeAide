@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <head>
 
+<<<<<<< HEAD
 @yield('header')
  <title>codeAide</title>
 <link href="{{ asset('css/style.css')}}" rel="stylesheet" type="text/css" >
 
 
+=======
+	<title>codeAide</title>
+>>>>>>> origin/master
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+
+	@yield('header')
 
  
   <body>
@@ -46,9 +52,18 @@
 		</div>
 	</div>
 	</div>
+<<<<<<< HEAD
 </body>
 </head>
 <body>
 @yield('content')
+=======
+
+	@yield('content')
+
+	<script src="/js/jquery.min.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<script src="/js/scripts.js"></script>
+>>>>>>> origin/master
 </body>
 </html>
