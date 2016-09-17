@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <head>
-<link href="{{ asset('css/style.css')}}" rel="stylesheet" type="text/css" >
 
 @yield('header')
  <title>codeAide</title>
+<link href="{{ asset('css/style.css')}}" rel="stylesheet" type="text/css" >
+
+
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
-  </head>
+ 
   <body>
 
     <div class="container-fluid">
@@ -43,6 +45,8 @@
 			</nav>
 		</div>
 	</div>
+	</div>
+</body>
 </head>
 <body>
 @yield('content')
