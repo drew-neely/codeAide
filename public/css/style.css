@@ -9,6 +9,7 @@ h3 {
     text-align: center;
     border-radius: 25px;
     margin: 10px;
+    border-bottom: 2px #6f41a8 solid;
 
 }
 
@@ -23,16 +24,16 @@ p {
 }
 
 .panel-default {
-	border-color:black;
+	border-color: black;
 }
 
 .panel-default > .panel-heading {
-  color: white;
+  color: #E2E2E2;
   background-color: #242528;
   border-color: black;
 }
 
 .panel-body {
 	background-color: #242528;
-	color: white;
+	color: #E2E2E2;
 }
