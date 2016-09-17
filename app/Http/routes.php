@@ -25,4 +25,4 @@ Route::get('account', 'accountsController@index');
 
 Route::get('indivproject/{projectId}', 'ProjectController@index');
 
-Route::get('createproject', 'createProjectController@createproject');
+Route::get('createproject', 'ProjectController@createproject');
