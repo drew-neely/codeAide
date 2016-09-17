@@ -22,4 +22,4 @@ Route::get('/home', 'HomeController@index');
 
 Route::get('submissions', 'submissionsController@index');
 
-Route::get('account', 'accountController@index');
+Route::get('account', 'accountsController@index');
