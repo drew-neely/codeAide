@@ -21,6 +21,6 @@ class ProjectController extends Controller
 
     public function createProject() {
 
-        return view('projects.createproject')
+        return view('projects.createproject');
     }
 }
