@@ -16,7 +16,7 @@
 			
 				<div class="panel panel-default">
 					<div class="panel-heading">
-						 <a class="panel-title" data-toggle="collapse" data-parent="#panel-365011" href="#panel-element-985096">Collapsible Group Item #1</a>
+						 <a class="panel-title collapsed" data-toggle="collapse" data-parent="#panel-365011" href="#panel-element-985096">Collapsible Group Item #1</a>
 					</div>
 					<div id="panel-element-985096" class="panel-collapse collapse in">
 						<div class="panel-body">
@@ -36,12 +36,13 @@
 				</div>
 			
 		</div>
+	</div>
 		<div class="col-md-6">
 			<h3>Solutions</h3>
 			
 				<div class="panel panel-default">
 					<div class="panel-heading">
-						 <a class="panel-title" data-toggle="collapse" data-parent="#panel-365011" href="#panel-element-985096">Collapsible Group Item #1</a>
+						 <a class="panel-title" data-toggle="collapse" data-parent="#panel-365012" href="#panel-element-985096">Collapsible Group Item #1</a>
 					</div>
 					<div id="panel-element-985096" class="panel-collapse collapse in">
 						<div class="panel-body">
