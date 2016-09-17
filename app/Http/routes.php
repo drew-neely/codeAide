@@ -20,4 +20,4 @@ Route::auth();
 Route::get('/home', 'HomeController@index');
 
 
-Route::get('submissions', 'submissionController@index');
+Route::get('submissions', 'submissionsController@index');
