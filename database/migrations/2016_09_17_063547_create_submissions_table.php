@@ -16,6 +16,7 @@ class CreateSubmissionsTable extends Migration
             $table->increments('id');
             $table->string('code');
             $table->integer('userId')->unsigned();
+            $table->integer('project_id')->unsigned();
             $table->timestamps();
         });
     }
