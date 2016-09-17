@@ -1,3 +1,38 @@
 body {
-	color:#2f323a;
+	background: #2f323a;
+}
+
+
+h3 {
+    color: #6f41a8;
+    font-size: 50px;
+    text-align: center;
+    border-radius: 25px;
+    margin: 10px;
+
+}
+
+p {
+    font-family: verdana;
+    font-size: 20px;
+    color: #c3abdb;
+}
+
+.navbar-header {
+	background-color: #6f41a8;
+}
+
+.panel-default {
+	border-color:black;
+}
+
+.panel-default > .panel-heading {
+  color: white;
+  background-color: #242528;
+  border-color: black;
+}
+
+.panel-body {
+	background-color: #242528;
+	color: white;
 }
