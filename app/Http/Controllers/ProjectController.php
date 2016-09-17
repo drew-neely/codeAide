@@ -18,4 +18,9 @@ class ProjectController extends Controller
     	}
     	return view('projects.individualproject', compact('project'));
     }
+
+    public function createProject() {
+
+        return view('projects.createproject')
+    }
 }
