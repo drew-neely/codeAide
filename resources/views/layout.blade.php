@@ -2,11 +2,12 @@
 <head>
 <link href="{{ asset('css/style.css')}}" rel="stylesheet" type="text/css" >
 
-@yield('header')
- <title>codeAide</title>
+	<title>codeAide</title>
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+
+	@yield('header')
 
   </head>
   <body>
@@ -43,8 +44,12 @@
 			</nav>
 		</div>
 	</div>
-</head>
-<body>
-@yield('content')
+	</div>
+
+	@yield('content')
+
+	<script src="/js/jquery.min.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<script src="/js/scripts.js"></script>
 </body>
 </html>

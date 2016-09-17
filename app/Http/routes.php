@@ -17,11 +17,10 @@ Route::get('/', function () {
 
 Route::auth();
 
-Route::get('/home', 'HomeController@index');
-
+Route::get('home', 'HomeController@index');
 
 Route::get('submissions/{projectId}', 'submissionsController@index');
 
 Route::get('account', 'accountsController@index');
 
-Route::get('/indivproject', 'indivprojectController@index');
+Route::get('indivproject/{projectId}', 'ProjectController@index');
