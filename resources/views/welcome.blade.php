@@ -22,8 +22,6 @@
 					<div id="collapse1" class="panel-collapse collapse">
 						<ul class="list-group">
 							<li class="list-group-item">One</li>
-							<li class="list-group-item">Two</li>
-							<li class="list-group-item">Three</li>
 						</ul>
 					</div>
 				</div>
@@ -43,8 +41,6 @@
 					<div id="collapse2" class="panel-collapse collapse">
 						<ul class="list-group">
 							<li class="list-group-item">One</li>
-							<li class="list-group-item">Two</li>
-							<li class="list-group-item">Three</li>
 						</ul>
 					
 					</div>
