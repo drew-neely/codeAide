@@ -2,14 +2,12 @@
 
 @section('content')
 
-<!DOCTYPE html>
-<html lang="en">
+<body>
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-
+ <div class="container-fluid">
 	<div class="row">
 		<div class="col-md-6">
 			<h3>Projects</h3>
@@ -48,17 +46,16 @@
 							<li class="list-group-item">Two</li>
 							<li class="list-group-item">Three</li>
 						</ul>
-						<div class="panel-footer">Footer</div>
+					
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	</head>
+</div>
 
-		<script src="js/jquery.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/scripts.js"></script>
+	</head>
+	
 	</body>
-	</html>
+
 	@stop
