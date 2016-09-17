@@ -24,3 +24,5 @@ Route::get('submissions/{projectId}', 'submissionsController@index');
 Route::get('account', 'accountsController@index');
 
 Route::get('indivproject/{projectId}', 'ProjectController@index');
+
+Route::get('createproject', 'createProjectController@createproject');
