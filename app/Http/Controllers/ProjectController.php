@@ -32,12 +32,24 @@ class ProjectController extends Controller
         $submissions = DB::table('submissions')->get();
         $problemSubmissions = array();
         foreach ($submissions as $s) {
-            if($s->id == $project->userId) {
+            if($s->project_id == $project->id) {
                 array_push($problemSubmissions, $s);
             }
         }
 
-        $data = array('project' => $project, 'user' => $user, 'submissions' => $submissions);
+        $solutionUsernameCodePairs = array();
+        foreach($problemSubmissions as $s) {
+            $owner = 'Submitter not found';
+            foreach($users as $u) {
+                if($u->id == $s->userId) {
+                    $owner = $u->name;
+                }
+            }
+            $pair = array('username' => $owner, 'code' => $s->code);
+            array_push($solutionUsernameCodePairs, $pair);
+        }
+
+        $data = array('project' => $project, 'user' => $user, 'solutionUsernameCodePairs' => $solutionUsernameCodePairs);
 
     	return view('projects.individualproject', compact('data'));
     }
