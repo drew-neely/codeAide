@@ -29,7 +29,7 @@
 						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 							<ul class="nav navbar-nav">
 								<li>
-									<a href="#">Bulletin</a>
+									<a href="http://localhost:8000/bulletin">Bulletin</a>
 								</li>
 								<li>
 									<a href="http://localhost:8000/indivproject/2">Projects</a>

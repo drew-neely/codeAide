@@ -60,6 +60,15 @@ class ProjectController extends Controller
     }
 
     public function bulletin() {
-        return view('projects.bulletin');
+        $projects = DB::table('projects')->get();
+        // $title = NULL;
+        // $description = NULL;
+
+        // foreach ($projects as $p) {
+        //     $title = $p->title;
+        //     $description = $p->description;
+        // }
+        // $bullet = array('title' => $title, 'description'=> $description);
+        return view('projects.bulletin', compact('projects'));
     }
 }
