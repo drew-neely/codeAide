@@ -32,10 +32,10 @@
 									<a href="http://localhost:8000/bulletin">Bulletin</a>
 								</li>
 								<li>
-									<a href="http://localhost:8000/indivproject/2">Projects</a>
+									<a href="http://localhost:8000/indivproject/2">My Projects</a>
 								</li>
 								<li>
-									<a href="http://localhost:8000/submissions/001">Solutions</a>
+									<a href="http://localhost:8000/submissions/001">My Solutions</a>
 								</li>
 							</ul>
 							<ul class="nav navbar-nav navbar-right">

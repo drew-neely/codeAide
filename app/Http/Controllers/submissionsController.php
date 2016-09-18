@@ -7,6 +7,7 @@ use DB;
 use App\Http\Requests;
 use App;
 use Auth;
+use Illuminate\Support\Facades\Redirect;
 
 class submissionsController extends Controller
 {
@@ -27,5 +28,6 @@ class submissionsController extends Controller
         $submission->userId = Auth::id();
         $submission->project_id = $projectId;
         $submission->save();
+        return Redirect::to('indivproject/' . $projectId);
     }
 }

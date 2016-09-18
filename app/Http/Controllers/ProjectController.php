@@ -61,6 +61,7 @@ class ProjectController extends Controller
 
     public function bulletin() {
         $projects = DB::table('projects')->get();
+        return $projects;
         // $title = NULL;
         // $description = NULL;
 
