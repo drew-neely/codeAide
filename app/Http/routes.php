@@ -30,3 +30,5 @@ Route::get('createproject', 'ProjectController@createproject');
 Route::get('pagenotfound', function() {
 	return view('pageNotFound');
 });
+
+Route::get('bulletin', 'ProjectController@bulletin');
