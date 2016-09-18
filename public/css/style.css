@@ -41,7 +41,7 @@ textarea {
 }
 
 .form-control {
-  width:80%;
+
   background-color: #E2E2E2;
 }
 .form-big {
@@ -91,6 +91,11 @@ p {
   font-size: 30px;
 }
 
+.panel {
+  width: 80%;
+
+}
+
 .btn {
   background-color: #9b65dd;
   border:2px #4b296b solid;
@@ -107,7 +112,7 @@ p {
 }
 
 .btn-lg {
-  width:90%;
+  width:100%;
 
 }
 

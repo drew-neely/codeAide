@@ -7,6 +7,7 @@
 <div class="panel-group">
 	<?php $count = 1; ?>
 	@foreach($projects as $p)
+	<center>
 	<div class="panel panel-default">
 		<div class="panel-heading">
 				<center>
@@ -25,6 +26,7 @@
 			</ul>
 		</div>
 	</div>
+	</center>center>
 	<?php $count++; ?>
 	@endforeach
 </div>
