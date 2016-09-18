@@ -22,6 +22,21 @@
 					<dd>
 						{{ $data['project']->description }}
 					</dd>
+					<dt>
+						<h4>Best Solution Award:</h4>
+					</dt>
+					<dd>
+						{{ $data['project']->bestSolutionAward }}
+					</dd>
+					<dt>
+						<h4>Total Solutions Award:</h4>
+					</dt>
+					<dd>
+						{{$data['project']->solutionsBudget }}
+					</dd>
+					<center>
+					<a href="/submissions/{{$data['project']->id }}" class="btn btn-primary btn-block">Solve</a>
+					</center>
 				</dl>
 			</div>
 		</div>

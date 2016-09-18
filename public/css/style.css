@@ -89,7 +89,7 @@ p {
   border:2px #4b296b solid;
 }
 
-.btn-primary:active {
+.btn:active {
   background-color: #9b65dd;
   border:2px #4b296b solid;
 }
@@ -102,4 +102,14 @@ p {
 .btn-lg {
   width:90%;
 
+}
+
+
+.btn:disabled {
+  background-color: #4b296b;
+  border: 2px #4b296b solid;
+}
+.btn:disabled:hover {
+  background-color: #4b296b;
+  border: 2px #4b296b solid;
 }
