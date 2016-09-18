@@ -20,7 +20,7 @@
 				<li class="list-group-item">{{$p -> description}}</li>
 				<li class="list-group-item">Best Solution Award : {{ $p->bestSolutionAward }}</li>
 				<li class="list-group-item">Total Solutions Award : {{ $p->solutionsBudget }}</li>
-				<center><li class="list-group-item"><a href="/" class="btn btn-primary">Solve</a></li></center>
+				<center><li class="list-group-item"><a href="/indivproject/{{ $p->id }}" class="btn btn-primary">Continue</a></li></center>
 				
 			</ul>
 		</div>
