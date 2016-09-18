@@ -118,3 +118,18 @@ p {
   background-color: #4b296b;
   border: 2px #4b296b solid;
 }
+
+.a:visited {
+  background-color: #9b65dd;
+  border:2px #4b296b solid;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+    background: #9b65dd;
+}
+
+.btn-primary:active, .btn-primary.active {
+    background: #9b65dd;
+    box-shadow: none;
+}
+ 
