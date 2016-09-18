@@ -12,36 +12,15 @@
 			<div class="col-md-12">
 				<div class="page-header">
 					<h1>
-						Project Name Here <small>by username here</small>
+						{{ $project->title }} <small>by username here</small>
 					</h1>
 				</div>
 				<dl>
 					<dt>
-						About
+						<h4>Description:</h4>
 					</dt>
 					<dd>
-						A description list is perfect for defining terms.
-					</dd>
-					<dt>
-						Some other stuff I guess.
-					</dt>
-					<dd>
-						Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.
-					</dd>
-					<dd>
-						Donec id elit non mi porta gravida at eget metus.
-					</dd>
-					<dt>
-						Malesuada porta
-					</dt>
-					<dd>
-						Etiam porta sem malesuada magna mollis euismod.
-					</dd>
-					<dt>
-						Felis euismod semper eget lacinia
-					</dt>
-					<dd>
-						Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+						{{ $project->description }}
 					</dd>
 				</dl>
 			</div>
