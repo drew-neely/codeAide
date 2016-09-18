@@ -12,7 +12,7 @@
 			<div class="col-md-12">
 				<div class="page-header">
 					<h1>
-						{{ $project->title }} <small>by username here</small>
+						{{ $data['project']->title }} <small>{{ is_null($data['user']) ? 'User not found' : $data['user']->name}}</small>
 					</h1>
 				</div>
 				<dl>
@@ -20,27 +20,33 @@
 						<h4>Description:</h4>
 					</dt>
 					<dd>
-						{{ $project->description }}
+						{{ $data['project']->description }}
 					</dd>
 				</dl>
 			</div>
 		</div>
-		<div class="row">
-			<div class="col-md-12">
-				<div class="panel-group" id="panel-234811">
-					<div class="panel panel-default">
-						<div class="panel-heading">
-							<a class="panel-title" data-toggle="collapse" data-parent="#panel-234811" href="#panel-element-574330">Collapsible Group Item #1</a>
-						</div>
-						<div id="panel-element-574330" class="panel-collapse collapse in">
-							<div class="panel-body">
-								Anim pariatur cliche...
+		@if(Auth::check())
+			@if(Auth::id() == $data['user']->id)
+				<div class="row">
+					<div class="col-md-12">
+						<div class="panel-group" id="panel-234811">
+							@foreach($data['solutionUsernameCodePairs'] as $pair)
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<a class="panel-title" data-toggle="collapse" data-parent="#panel-234811" href="#panel-element-574330">{{ $pair['username'] }}</a>
+								</div>
+								<div id="panel-element-574330" class="panel-collapse collapse in">
+									<div class="panel-body">
+										{{ $pair['code'] }}
+									</div>
+								</div>
 							</div>
+							@endforeach
 						</div>
 					</div>
 				</div>
-			</div>
-		</div>
+			@endif
+		@endif
 	</div>
 </body>
 </html>
