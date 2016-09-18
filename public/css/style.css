@@ -17,6 +17,35 @@ h1 {
 	color: #E2E2E2;
 }
 
+
+h4 {
+  color:#E2E2E2;
+}
+  
+h2{
+  color: white;
+  font-size: 40px;
+}
+
+textarea {
+  resize: none;
+  background-color: #E2E2E2;
+}
+
+.form-control {
+  width:80%;
+  background-color: #E2E2E2;
+}
+.form-big {
+  height:300px;
+  width:80%;
+
+}
+
+.jumbotron {
+  background-color: #242528
+}
+
 dt {
 	color:#E2E2E2;
 }
