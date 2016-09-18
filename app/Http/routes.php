@@ -26,3 +26,7 @@ Route::get('account', 'accountsController@index');
 Route::get('indivproject/{projectId}', 'ProjectController@index');
 
 Route::get('createproject', 'ProjectController@createproject');
+
+Route::get('pagenotfound', function() {
+	return view('pageNotFound');
+});
