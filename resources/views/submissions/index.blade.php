@@ -14,10 +14,13 @@
 	@else
 		<h1 align="center">Solve Project: {{ $project->title }}</h1>
 		<hr>
+		<h5>Description</h5>
 		<p align="center"> {{ $project->description }} </p>
 
-		<br>
-
+		<h5>Best Solution Award</h5>
+		<p align="center"> {{ $project->bestSolutionAward }} </p>
+		<h5>Total Solutions Award</h5>
+		<p align="center"> {{ $project->solutionsBudget }} </p>
 		<hr>
 
 		<br>
@@ -27,7 +30,7 @@
 
 			<div class="form-group" align="center">
 				<h4>Code</h4>
-				<textarea name="code" id="codeBox" class="form-control"></textarea>
+				<textarea name="code" id="codeBox" class="form-big"></textarea>
 			</div>
 
 			<div class="form-group" align="center">
