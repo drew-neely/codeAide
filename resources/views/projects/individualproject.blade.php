@@ -12,7 +12,7 @@
 			<div class="col-md-12">
 				<div class="page-header">
 					<h1>
-						{{ $project->title }} <small>by username here</small>
+						{{ $data['project']->title }} <small>{{ is_null($data['user']) ? 'User not found' : $data['user']->name}}</small>
 					</h1>
 				</div>
 				<dl>
@@ -20,7 +20,7 @@
 						<h4>Description:</h4>
 					</dt>
 					<dd>
-						{{ $project->description }}
+						{{ $data['project']->description }}
 					</dd>
 				</dl>
 			</div>

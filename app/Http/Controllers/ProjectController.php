@@ -29,9 +29,17 @@ class ProjectController extends Controller
             }
         }
 
-        
+        $submissions = DB::table('submissions')->get();
+        $problemSubmissions = array();
+        foreach ($submissions as $s) {
+            if($s->id == $project->userId) {
+                array_push($problemSubmissions, $s);
+            }
+        }
 
-    	return view('projects.individualproject', compact('project'));
+        $data = array('project' => $project, 'user' => $user, 'submissions' => $submissions);
+
+    	return view('projects.individualproject', compact('data'));
     }
 
     public function createProject() {
@@ -40,6 +48,6 @@ class ProjectController extends Controller
     }
 
     public function bulletin() {
-        
+        return view('projects.bulletin');
     }
 }
