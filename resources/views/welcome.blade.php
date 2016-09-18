@@ -11,7 +11,9 @@
 	<div class="row">
 		<div class="col-md-12">
 			<h3>Projects</h3>
-			
+			@if(empty($userProjects))
+				<h1 align="center">You have no project posts yet.</h1>
+			@else
 			<div class="panel-group">
 			<?php $count = 1; ?>
 			@foreach($userProjects as $p)
@@ -32,6 +34,7 @@
 				<?php $count++; ?>
 			@endforeach
 			</div>
+			@endif
 		</div>
 	</div>
 </div>
