@@ -40,7 +40,10 @@
 					</ul>
 					<ul class="nav navbar-nav navbar-right">
 						<li>
-							<a href="#">Username</a>
+							<a href="http://localhost:8000/login">Login</a>
+						</li>
+						<li>
+							<a href="http://localhost:8000/login">Sign Up</a>
 						</li>
 					</ul>
 				</div>
