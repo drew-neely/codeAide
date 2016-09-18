@@ -71,4 +71,18 @@ class ProjectController extends Controller
         // $bullet = array('title' => $title, 'description'=> $description);
         return view('projects.bulletin', compact('projects'));
     }
+
+    public function addProject(Request $request, $projectId) {
+        
+        $project = new App\Project;
+        $project->title = $request->all()['title'];
+        $project->bestSolutionAward = $request->all()['bestSolutionAward'];
+        $project->solutionsBudget = $request->all()['solutionsBudget'];
+        $project->description = $request->all()['description'];
+        $project->tests = $request->all()['tests'];
+        $project->userId = Auth::id();
+        $project->status = 0;
+        $project->winnerId = 0;
+        return Redirect::to('indivproject/' . $projectId);
+    }
 }

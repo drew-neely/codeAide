@@ -23,7 +23,7 @@ Route::get('account', 'accountsController@index');
 
 Route::get('indivproject/{projectId}', 'ProjectController@index');
 
-Route::get('createproject', 'ProjectController@createproject');
+Route::get('createproject', 'ProjectController@createProject');
 
 Route::get('pagenotfound', function() {
 	return view('pageNotFound');
@@ -32,3 +32,5 @@ Route::get('pagenotfound', function() {
 Route::get('bulletin', 'ProjectController@bulletin');
 
 Route::post('submissions/{projectId}/submit', 'submissionsController@submit');
+
+Route::post('createproject/submit', 'ProjectController@addProject');
