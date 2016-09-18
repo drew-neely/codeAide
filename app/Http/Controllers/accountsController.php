@@ -9,6 +9,6 @@ use App\Http\Requests;
 class accountsController extends Controller
 {
     public function index(){
-    	return view(profile.index);
+    	return view('profile.index');
     }
 }
