@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use DB;
 use App\Http\Requests;
+use App;
+use Auth;
 
 class submissionsController extends Controller
 {
@@ -17,5 +19,13 @@ class submissionsController extends Controller
     		}
     	}
     	return view('submissions.index', compact('project'));
+    }
+
+    public function submit(Request $request, $projectId) {
+        $submission = new App\Submission;
+        $submission->code = $request->all()['code'];
+        $submission->userId = Auth::id();
+        $submission->project_id = $projectId;
+        $submission->save();
     }
 }

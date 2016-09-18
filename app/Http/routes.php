@@ -32,3 +32,5 @@ Route::get('pagenotfound', function() {
 });
 
 Route::get('bulletin', 'ProjectController@bulletin');
+
+Route::post('submissions/{projectId}/{code}', 'submissionsController@submit');

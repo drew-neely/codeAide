@@ -23,24 +23,23 @@
 		<br>
 		<br>
 
-		<form method="POST" action="">
+		<form method="POST" action="/submissions/{{ $project->id }}/submit">
 
 			<div class="form-group" align="center">
 				<h4>Code</h4>
-				<textarea name="code" class="form-control"></textarea>
+				<textarea name="code" id="codeBox" class="form-control"></textarea>
 			</div>
 
 			<div class="form-group" align="center">
-				<button type="button" class="btn btn-primary">Test the Code!</button>
+				<button type="button" id="test" class="btn btn-primary" onclick="runTests('{{ $project->tests }}')">Test the Code!</button>
 				<button type="submit" id="submitBtn" class="btn btn-primary" disabled>Submit the Code!</button>
 			</div>
 		</form>
 		
 	@endif
 	
-	<script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/scripts.js"></script>
+	<script src="/js/testing.js"></script>
+
   </body>
 </html>
 @stop
