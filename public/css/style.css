@@ -9,7 +9,8 @@ h3 {
     text-align: center;
   
     margin: 10px;
-    border-bottom: 2px #E2E2E2 solid;
+    border-bottom: 2px black solid;
+     background-color: #232323;
 
 }
 
@@ -31,6 +32,7 @@ h5 {
 h2{
   color: white;
   font-size: 40px;
+
 }
 
 textarea {
