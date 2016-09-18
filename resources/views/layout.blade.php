@@ -32,10 +32,10 @@
 							<a href="#">Bulletin</a>
 						</li>
 						<li>
-							<a href="#">Projects</a>
+							<a href="#">My Projects</a>
 						</li>
 						<li>
-							<a href="#">Solutions</a>
+							<a href="#">My Solutions</a>
 						</li>
 					</ul>
 					<ul class="nav navbar-nav navbar-right">
