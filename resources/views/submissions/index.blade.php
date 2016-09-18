@@ -34,7 +34,7 @@
 			</div>
 
 			<div class="form-group" align="center">
-				<button type="button" id="test" class="btn btn-primary" onclick="runTests('{{ $project->tests }}')">Test the Code!</button>
+				<button type="button" id="test" class="btn btn-primary" onclick="runTests('{{ $project->tests }}')">Test the Code!</a>
 				<button type="submit" id="submitBtn" class="btn btn-primary" disabled>Submit the Code!</button>
 			</div>
 		</form>

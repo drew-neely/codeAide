@@ -10,8 +10,8 @@
 
 		<div class="container-fluid">
 			@if(Auth::check())
-			<div class="row">
-				<form method="POST" action="/createproject/submit">
+			<form method="POST" action="/createproject/submit">
+				<div class="row">				
 					<div class="col-md-4">
 
 
@@ -45,13 +45,14 @@
 							<textarea name="tests" class="form-big"></textarea>
 						</div>
 					</div>
-				</form>
-			</div>
-			<div class="col-md-12">
-				<center>	
-					<button type="submit" class="btn btn-primary">Post Project</button>
-				</center>
-			</div>
+				</div>
+				<div class="col-md-12">
+					<center>	
+						<button type="submit" class="btn btn-primary">Post Project</button>
+					</center>
+				</div>
+			</form>
+			
 			@else
 			<h1 align="center">Please login or sign up.</h1>
 			@endif

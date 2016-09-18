@@ -3,7 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Redirect;
 use DB;
+use App;
+use Auth;
 use App\Http\Requests;
 
 class ProjectController extends Controller
@@ -72,8 +75,7 @@ class ProjectController extends Controller
         return view('projects.bulletin', compact('projects'));
     }
 
-    public function addProject(Request $request, $projectId) {
-        
+    public function addProject(Request $request) {
         $project = new App\Project;
         $project->title = $request->all()['title'];
         $project->bestSolutionAward = $request->all()['bestSolutionAward'];
@@ -83,6 +85,7 @@ class ProjectController extends Controller
         $project->userId = Auth::id();
         $project->status = 0;
         $project->winnerId = 0;
-        return Redirect::to('indivproject/' . $projectId);
+        $project->save();
+        return Redirect::to('indivproject/' . $project->id);
     }
 }

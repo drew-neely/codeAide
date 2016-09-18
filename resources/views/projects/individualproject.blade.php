@@ -35,32 +35,32 @@
 						{{$data['project']->solutionsBudget }}
 					</dd>
 					<center>
-					<a href="/submissions/{{$data['project']->id }}" class="btn btn-primary btn-block">Solve</a>
+						<a href="/submissions/{{$data['project']->id }}" class="btn btn-primary btn-block">Solve</a>
 					</center>
 				</dl>
 			</div>
 		</div>
 		@if(Auth::check())
-			@if(Auth::id() == $data['user']->id)
-				<div class="row">
-					<div class="col-md-12">
-						<div class="panel-group" id="panel-234811">
-							@foreach($data['solutionUsernameCodePairs'] as $pair)
-							<div class="panel panel-default">
-								<div class="panel-heading">
-									<a class="panel-title" data-toggle="collapse" data-parent="#panel-234811" href="#panel-element-574330">{{ $pair['username'] }}</a>
-								</div>
-								<div id="panel-element-574330" class="panel-collapse collapse in">
-									<div class="panel-body">
-										{{ $pair['code'] }}
-									</div>
-								</div>
+		@if(Auth::id() == $data['user']->id)
+		<div class="row">
+			<div class="col-md-12">
+				<div class="panel-group" id="panel-234811">
+				@foreach($data['solutionUsernameCodePairs'] as $pair)
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<a class="panel-title" data-toggle="collapse" data-parent="#panel-234811" href="#panel-element-574330">{{ $pair['username'] }}</a>
+						</div>
+						<div id="panel-element-574330" class="panel-collapse collapse in">
+							<div class="panel-body">
+								{{ $pair['code'] }}
 							</div>
-							@endforeach
 						</div>
 					</div>
+					@endforeach
 				</div>
-			@endif
+			</div>
+		</div>
+		@endif
 		@endif
 	</div>
 </body>

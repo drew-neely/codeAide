@@ -22,11 +22,12 @@ class submissionsController extends Controller
     	return view('submissions.index', compact('project'));
     }
 
-    public function submit(Request $request) {
+    public function submit(Request $request, $projectId) {
         $submission = new App\Submission;
         $submission->code = $request->all()['code'];
         $submission->userId = Auth::id();
+        $submission->project_id = $projectId;
         $submission->save();
-        return Redirect::to('indivproject/' . $submission->id);
+        return Redirect::to('indivproject/' . $projectId);
     }
 }
