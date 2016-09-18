@@ -20,6 +20,7 @@ h1 {
 
 h4 {
   color:#E2E2E2;
+ 
 }
   
 h2{
@@ -79,3 +80,26 @@ p {
 	color: #E2E2E2;
 }
 
+.panel-title {
+  font-size: 30px;
+}
+
+.btn {
+  background-color: #9b65dd;
+  border:2px #4b296b solid;
+}
+
+.btn-primary:active {
+  background-color: #9b65dd;
+  border:2px #4b296b solid;
+}
+
+.btn:hover {
+  background-color:#6f41a8;
+   border: 2px #4b296b solid;
+}
+
+.btn-lg {
+  width:90%;
+
+}
