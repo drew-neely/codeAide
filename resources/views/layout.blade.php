@@ -32,7 +32,7 @@
 							<a href="#">Bulletin</a>
 						</li>
 						<li>
-							<a href="http://localhost:8000/indivproject/0001">Projects</a>
+							<a href="http://localhost:8000/indivproject/2">Projects</a>
 						</li>
 						<li>
 							<a href="http://localhost:8000/submissions/001">Solutions</a>
