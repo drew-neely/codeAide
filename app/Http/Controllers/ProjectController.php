@@ -40,6 +40,6 @@ class ProjectController extends Controller
     }
 
     public function bulletin() {
-        return view('projects.bulletin');
+        
     }
 }
